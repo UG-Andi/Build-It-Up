@@ -3,13 +3,13 @@ using System.Collections;
 
 public class MenuManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public void SceneToChangeTo(int scene)
+    {
+        Application.LoadLevel(scene);
+    }
+
+    public void EndApplication()
+    {
+        Application.Quit();
+    }
 }
